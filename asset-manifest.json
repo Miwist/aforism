@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/aforism/static/css/main.a5594415.css",
-    "main.js": "/aforism/static/js/main.ece6cf5a.js",
+    "main.js": "/aforism/static/js/main.e47298f6.js",
     "index.html": "/aforism/index.html",
     "main.a5594415.css.map": "/aforism/static/css/main.a5594415.css.map",
-    "main.ece6cf5a.js.map": "/aforism/static/js/main.ece6cf5a.js.map"
+    "main.e47298f6.js.map": "/aforism/static/js/main.e47298f6.js.map"
   },
   "entrypoints": [
     "static/css/main.a5594415.css",
-    "static/js/main.ece6cf5a.js"
+    "static/js/main.e47298f6.js"
   ]
 }
