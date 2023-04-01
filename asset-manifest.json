@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Miwist/aforism/static/css/main.a5594415.css",
+    "main.js": "/Miwist/aforism/static/js/main.84d86f45.js",
+    "index.html": "/Miwist/aforism/index.html",
+    "main.a5594415.css.map": "/Miwist/aforism/static/css/main.a5594415.css.map",
+    "main.84d86f45.js.map": "/Miwist/aforism/static/js/main.84d86f45.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5594415.css",
+    "static/js/main.84d86f45.js"
+  ]
+}
