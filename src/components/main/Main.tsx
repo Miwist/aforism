@@ -91,7 +91,7 @@ const Main: FC = () => {
                             return 1
                         }
                     }).map((elem) => {
-                        return (<div className="quote-list mb-3" style={{ padding: "25px", background: "rgb(144 191 243)", borderRadius: '5px', maxWidth: "800px" }} key={elem._id}>
+                        return (<div className="quote-list mb-3" style={{ padding: "25px", background: "rgb(185 214 246)", borderRadius: '5px', maxWidth: "800px" }} key={elem._id}>
                             <div className="mb-2 d-flex flex-column justigy-content-center">
                                 <blockquote className='blockquote mb-3'>{elem.content}</blockquote>
                                 <i className='mb-2'>author: {elem.author}</i>
