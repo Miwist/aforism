@@ -19,3 +19,15 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .author-list {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+ 
+}
