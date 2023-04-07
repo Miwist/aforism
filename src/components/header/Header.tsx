@@ -10,6 +10,7 @@ const Header = () => {
                 <Link className='link-info text-decoration-none' to='/facts'>Факты</Link>
                 <Link className='link-info text-decoration-none' to='/advice'>Советы</Link>
                 <Link className='link-info text-decoration-none' to='/jokes'>Шутки</Link>
+                <Link className='link-info text-decoration-none' to='/categories'>Категории</Link>
             </nav>
         </header>
     )

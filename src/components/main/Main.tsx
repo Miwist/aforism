@@ -44,7 +44,7 @@ const Main: FC = () => {
 
     function addCategory(category: string) {
         localStorage.setItem('category', category)
-        window.location.replace('https://miwist.github.io/categories');
+        window.location.href = '/categories';
     }
 
 
