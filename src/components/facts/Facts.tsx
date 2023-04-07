@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { factApi } from '../../types/types';
 
 const Facts = () => {
- const [factDate, setFactDate] = useState<factApi>();
- const [factMath, setFactMath] = useState<factApi>();
- const [factTrivia, setFactTrivia] = useState<factApi>();
- const [counter, setCounter] = useState(0);
+    const [factDate, setFactDate] = useState<factApi>();
+    const [factMath, setFactMath] = useState<factApi>();
+    const [factTrivia, setFactTrivia] = useState<factApi>();
+    const [counter, setCounter] = useState(0);
 
- function nextFact() {
-    setCounter(counter + 1);
- }
+    function nextFact() {
+        setCounter(counter + 1);
+    }
     useEffect(() => {
         fetch("http://numbersapi.com/random/year?json")
             .then(res => res.json())
@@ -24,7 +24,7 @@ const Facts = () => {
                 }
             )
 
-            fetch("http://numbersapi.com/random/math?json")
+        fetch("http://numbersapi.com/random/math?json")
             .then(res => res.json())
             .then(
                 (res) => {
@@ -35,8 +35,8 @@ const Facts = () => {
                     console.log(error);
                 }
             )
-            
-            fetch("http://numbersapi.com/random/trivia?json")
+
+        fetch("http://numbersapi.com/random/trivia?json")
             .then(res => res.json())
             .then(
                 (res) => {
@@ -47,14 +47,14 @@ const Facts = () => {
                     console.log(error);
                 }
             )
-    },[counter])
+    }, [counter])
 
     return (
-        <section className="container d-flex flex-column align-items-center" >
-               <h1 className='mb-3'>Факты</h1>
-               <button type="button" className='btn btn-success mb-3' onClick={nextFact}>Обновить</button>
-               <div className="wrapper">
-                <div className="fact-date mb-5 d-flex flex-row align-items-center" style={{ padding: "25px", background: "rgb(249 170 236)", borderRadius: '5px', maxWidth: "600px"}}>
+        <section className="container d-flex flex-column align-items-center" style={{ height: '100vh' }}>
+            <h1 className='mb-3'>Факты</h1>
+            <button type="button" className='btn btn-success mb-3' onClick={nextFact}>Обновить</button>
+            <div className="wrapper">
+                <div className="fact-date mb-5 d-flex flex-row align-items-center" style={{ padding: "25px", background: "rgb(249 170 236)", borderRadius: '5px', maxWidth: "600px" }}>
                     <div className="d-flex flex-column">
                         <h2>Даты</h2>
                         <h5>{factDate?.date}</h5>
@@ -74,10 +74,10 @@ const Facts = () => {
                         <h5>{factTrivia?.date}</h5>
                         <p>{factTrivia?.text}</p>
                     </div>
+                </div>
             </div>
-               </div>
-            
-           
+
+
         </section>
     )
 }

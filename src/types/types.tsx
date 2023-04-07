@@ -14,20 +14,6 @@ export interface Quote {
     }],
 }
 
-export interface storage {
-    
-        favorite?: boolean,
-        author?: string,
-        authorSlug?: string,
-        content?: string,
-        dateAdded?: string,
-        tags?: string[],
-        _id?: string,
-    
-
-}
-
-
 export interface jokeApi {
     type: string,
     setup: string,
