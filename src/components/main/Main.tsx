@@ -1,6 +1,7 @@
 
 import React, { FC, useEffect, useState } from 'react'
 import { Quote } from '../../types/types';
+import { Link } from 'react-router-dom';
 
 const Main: FC = () => {
 
@@ -44,7 +45,6 @@ const Main: FC = () => {
 
     function addCategory(category: string) {
         localStorage.setItem('category', category)
-        window.location.href = '/categories';
     }
 
 
@@ -113,11 +113,11 @@ const Main: FC = () => {
             <div className="d-flex flex-column align-items-center">
                 <div className='wrapper author-list ms-3' style={{ padding: "25px", background: "rgb(185 214 246)", borderRadius: '5px', maxWidth: "800px", maxHeight: "100%", minWidth: '300px', marginBottom: "20px" }} >
                     <h3 style={{ color: "#06368d" }} className='mb-3'>Категории</h3>
-                    <p className='link-primary' onClick={() => addCategory('science')} style={{ cursor: 'pointer' }}>Наука</p>
-                    <p className='link-primary' onClick={() => addCategory('history')} style={{ cursor: 'pointer' }}>История</p>
-                    <p className='link-primary' onClick={() => addCategory('technology')} style={{ cursor: 'pointer' }}>Технологии</p>
-                    <p className='link-primary' onClick={() => addCategory('politics')} style={{ cursor: 'pointer' }}>Политика</p>
-                    <p className='link-primary' onClick={() => addCategory('future')} style={{ cursor: 'pointer' }}>Футуризм</p>
+                    <Link to='/categories' style={{ textDecoration: "none" }}><p onClick={() => addCategory('science')} style={{ textDecoration: "none" }}>Наука</p></Link>
+                    <Link to='/categories' style={{ textDecoration: "none" }}><p onClick={() => addCategory('history')} style={{ textDecoration: "none" }}>История</p></Link>
+                    <Link to='/categories' style={{ textDecoration: "none" }}><p onClick={() => addCategory('technology')} style={{ textDecoration: "none" }}>Технологии</p></Link>
+                    <Link to='/categories' style={{ textDecoration: "none" }}><p onClick={() => addCategory('politics')} style={{ textDecoration: "none" }}>Политика</p></Link>
+                    <Link to='/categories' style={{ textDecoration: "none" }}><p  onClick={() => addCategory('future')} >Футуризм</p></Link>
                 </div>
                 {items.map((item) => {
                     return <div className='wrapper author-list ms-3' style={{ padding: "25px", background: "rgb(185 214 246)", borderRadius: '5px', maxWidth: "800px", maxHeight: "100%", minWidth: '300px' }} >
